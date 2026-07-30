@@ -1,4 +1,3 @@
-/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +16,6 @@ body {
   background-size: cover;
 }
 
-
-/* Menu Navigasi */
 menu {
   position: fixed;
   top: 0;
@@ -87,7 +84,6 @@ menu .navi {
   color: #ecb176;
 }
 
-/*Welcoming*/
 .atas {
   display: flex;
   justify-content: space-between;
@@ -163,32 +159,31 @@ menu .navi {
   margin-top: -70px;
 }
 
-/* Kanan: teks */
-.tengah1 .kanan {
+.tengah1 .kiri {
   max-width: 600px;
   margin-top: 140px;
 }
 
-.tengah1 .kanan h2 {
+.tengah1 .kiri h2 {
   font-size: 35px;
   color: #a67b5b;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
-.tengah1 .kanan h1 {
+.tengah1 .kiri h1 {
   font-size: 55px;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
-.tengah1 .kanan p {
+.tengah1 .kiri p {
   margin-bottom: 16px;
   color: #555;
   font-size: 18px;
 }
 
-.tengah1 .kanan button {
+.tengah1 .kiri button {
   background: #a67b5b;
   color: #fff;
   padding: 12px 25px;
@@ -202,96 +197,152 @@ menu .navi {
   font-size: 18px;
 }
 
-.tengah1 .kanan button:hover {
+.tengah1 .kiri button:hover {
   background: #6f4e37;
 }
 
-/* Kiri: kotak-kotak */
-.tengah1 .kiri {
+.tengah1 .kanan {
   flex: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 600px;
+  max-width: 500px;
   margin-left: 25px;
   margin-top: 100px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
 }
 
-.tengah1 .kiri .kotak1 {
-  width: 255px;
-  height: 300px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("image/foto-tengah1\ \(1\).jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.tengah1-kanan1 img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.tengah1 .kiri .kotak2 {
-  width: 255px;
-  height: 300px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("image/foto-tengah1\ \(2\).jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.tengah1-kanan2 {
+  display: flex;
+  position: relative;
 }
 
-.tengah1 .kiri .kotak3 {
-  width: 255px;
-  height: 300px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("image/foto-tengah1\ \(3\).jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.tengah1-kanan2 .harga1 {
+  background-color: #a48464;
+  width: 165px;
+  height: 45px;
+  text-align: center;
+  color: #fff;
+  margin-top: -25px;
+  margin-left: 25px;
+  padding: 8px 12px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 6px 6px 6px 6px;
 }
 
-.tengah1 .kiri .kotak4 {
-  width: 255px;
-  height: 300px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("image/foto-tengah1\ \(4\).jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.tengah1 .kiri .foto {
-  background-color: #6f4e37;
-  width: 115px;
-  height: 80px;
+.tengah1-kanan3 {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
-  padding: 10px;
+  padding: 20px 25px 10px 25px;
 }
 
-.tengah1 .kiri .kotak1 img,
-.kotak2 img,
-.kotak3 img,
-.kotak4 img {
-  margin-left: 20px;
-  width: 50px;
+.tengah1-kanan3 h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
 }
 
-.tengah1 .kiri .kotak1 h3,
-.kotak2 h3,
-.kotak3 h3,
-.kotak4 h3 {
-  margin-left: 20px;
-  color: white;
-  font-size: 20px;
+.tengah1-kanan3 .bintang {
+  display: flex;
+  gap: 4px;
+  color: #ecb176;
 }
 
-.tengah1 .kiri .kotak1 p,
+.tengah1-kanan4 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 25px 15px 25px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.kotak1,
+.kotak2,
+.kotak3 {
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.kotak1 i,
+.kotak2 i,
+.kotak3 i {
+  color: #a67b5b;
+  font-size: 18px;
+}
+
+.kotak1 p,
 .kotak2 p,
-.kotak3 p,
-.kotak4 p {
-  margin-left: 20px;
-  color: white;
-  font-size: 15px;
-  text-decoration: solid;
-  width: 220px;
+.kotak3 p {
+  font-size: 16px;
+  margin-left: 8px;
+  margin-top: 0;
+  font-family: "Cormorant", "Cinzel", serif;
+}
+
+.tengah1-kanan5 {
+  padding: 15px 25px 25px 25px;
+}
+
+.tengah1-kanan5 p {
+  width: 100%;
+  margin-left: 0;
+  color: #666;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.kanan5-tengah1 {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+
+.kanan5-button button {
+  background: #a67b5b;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+  font-family: "Cormorant", "Cinzel", serif;
+  font-size: 16px;
+}
+
+.kanan5-button button:hover {
+  background: #6f4e37;
+}
+
+.kanan6-button button {
+  background: #6f4e37;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+  font-family: "Cormorant", "Cinzel", serif;
+  font-size: 16px;
+}
+
+.kanan6-button button:hover {
+  background: #543a29;
 }
 
 .tengah2 {
@@ -367,7 +418,6 @@ menu .navi {
   background-position: center;
 }
 
-/* text pojok atas */
 .location .atas {
   width: 120px;
   background: #ecb176;
@@ -380,7 +430,6 @@ menu .navi {
   text-shadow: #333 2px 2px 4px;
 }
 
-/* text pojok bawah */
 .location .bawah {
   background: #fed8b1;
   color: #333;
@@ -400,7 +449,6 @@ menu .navi {
   width: 120px;
 }
 
-/* testimoni */
 .tengah5 {
   padding: 80px 10%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), #ecb176),
@@ -433,11 +481,6 @@ menu .navi {
   font-size: 30px;
   color: #fff;
   text-shadow: #333 2px 2px 4px;
-}
-
-.tengah5 .atas-testi img {
-  width: 20px;
-  height: 20px;
 }
 
 .testi1,
@@ -514,8 +557,6 @@ menu .navi {
   justify-content: center;
   padding: 0px 0px 112px;
   background-color: #fff;
-  display: flex;
-  justify-content: center;
 }
 
 .tengah4 .about {
@@ -560,8 +601,28 @@ menu .navi {
   background: #6f4e37;
 }
 
-.about-kiri {
+.about-kanan {
   flex: 1;
+}
+
+.kiri-icon {
+  display: flex;
+}
+
+.kiri-icon p {
+  margin-top: 27px;
+  margin-left: 10px;
+}
+
+.play i {
+  font-size: 50px;
+  color: #6f4e37;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.play i:hover {
+  color: #ecb176;
 }
 
 .about-kiri img {
@@ -605,7 +666,6 @@ menu .navi {
   justify-content: center;
   padding: 0px 0px 112px;
   background-color: #fff;
-  justify-content: center;
 }
 
 .tengah7 .studio {
@@ -739,8 +799,46 @@ footer {
   color: #fed8b1;
   font-size: 30px;
   padding-top: 90px;
+  text-align: left;
+  margin-top: -90px;
+  padding-left: 30px;
+}
+
+.kaki {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar-footer {
+  display: flex;
+  list-style: none;
+  float: right;
+  text-align: right;
+}
+
+.bar-footer a {
+  color: #fed8b1;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.bar-footer a:hover:not(.active) {
+  color: #ecb176;
+}
+
+.beda {
+  margin-right: 10px;
+}
+
+.kotak-footer {
+  border-left: 1px solid #a67b5b;
+  padding-left: 10px;
   text-align: center;
-  margin-top: -80px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .tab {
@@ -927,7 +1025,6 @@ footer {
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-bottom: 12px;
   margin-bottom: 40px;
   margin-top: -30px;
 }
@@ -1034,7 +1131,6 @@ footer {
 .bawah-blog button {
   background-color: #6f4e37;
   color: white;
-  border-radius: 2px;
   width: 115px;
   height: 40px;
   font-size: 16px;
@@ -1048,7 +1144,6 @@ footer {
 .bawah-blog button:hover {
   background-color: #a48464;
   color: white;
-  border-radius: 2px;
   width: 115px;
   height: 40px;
   font-size: 16px;
